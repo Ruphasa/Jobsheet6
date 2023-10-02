@@ -5,14 +5,19 @@ public class Pemilihan2Percobaan124 {
         int tahun;
         System.out.println("Tahun Berapa ?");
         tahun = input24.nextInt();
-        if (tahun%4==0) {
+        if (tahun%400==0) {
+            if (tahun%100==0) {
+                System.out.println("tahun kabisat");
+            }
+        }
+        else if (tahun%4==0) {
             if (tahun%100!=0) {
                 System.out.println("Tahun Kabisat");
             }else {
-            System.out.println("bukan Tahun");
+            System.out.println("bukan Tahun Kabisat");
         }
         } else {
-            System.out.println("bukan Tahun");
+            System.out.println("bukan Tahun Kabisat");
         }
     }
 }
